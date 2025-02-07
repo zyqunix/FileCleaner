@@ -46,10 +46,13 @@ class Program
         if (Directory.Exists(path))
         {
             ProcessDirectory(path);
+            Console.WriteLine("Finished processing, you may close this window");
+
         }
         else
         {
-            Console.WriteLine("Directory does not exist.");
+            Console.WriteLine("Directory does not exist");
         }
     }
+
 }
